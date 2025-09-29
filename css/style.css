@@ -1,0 +1,154 @@
+/* Reset de css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Sin congiguracion el rem vale: */
+  /* 1rem = 16px */
+
+  /* Para que 1 rem = 10px */
+  font-size: 62.5%;
+}
+
+body{
+    font-family: "Asimovian", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #FFF4E5;
+    color: #2E1C02;
+
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Una columna de 200px y otra que ocupa el espacio restante */
+    grid-template-rows: auto 1fr auto; /* Tres filas, la del medio es flexible */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.header{
+    background-color: black;
+
+    grid-column: 1 / 4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    padding: 0.5rem;
+    margin-left: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.header__div{
+    padding: 1rem;
+    margin-right: 0.4rem;
+}
+
+.header__div ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header__div li{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+.header__div a{
+    color: rgb(129, 236, 250);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+main{
+    width: 100%;
+    margin: 0rem 0rem;
+
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.parrafo-home{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.imagenes-home{
+    width: 90%;
+}
+
+.imagenes-home h2{
+    text-decoration: underline;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.tarjeta-imagen{
+    background-color: rgb(0, 39, 73);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-imagen h3{
+    color: aliceblue;
+    padding: rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-imagen img{
+    border: 0.1rem solid white;
+    width: 100%;
+}
+
+.tarjeta-imagen a{
+    text-decoration: underline;
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+}
+
+
+footer{
+    grid-column: 1 / 4;
+    background-color: black;
+    padding: 1rem;
+}
+
+footer p{
+    color: rgb(129, 236, 250);
+    border: 0.1rem solid white
+}
+
+footer a{
+    text-decoration:underline;
+    color: #ffffff;
+}
