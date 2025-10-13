@@ -131,7 +131,7 @@ main h1{
     color: aliceblue;
     padding: rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,9 +141,8 @@ main h1{
     border: 0.1rem solid white;
     max-width: 20rem;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    justify-self: center;
 }
 
 .tarjeta-imagen p{
